@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap");
+$main_font: "Sedgwick Ave", cursive;
+
+@import "nav";
+@import "slick";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 標楷體;
+}
