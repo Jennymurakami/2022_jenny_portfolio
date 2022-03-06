@@ -13,6 +13,7 @@ nav {
           align-items: center;
   -webkit-box-shadow: 0 7px 7px #ccc;
           box-shadow: 0 7px 7px #ccc;
+  overflow: hidden;
 }
 
 nav .logo a {
@@ -67,6 +68,7 @@ nav .about_icom a img:hover {
   width: 100%;
   height: 100vh;
   text-align: center;
+  overflow: hidden;
 }
 
 .aboutme .p_title {
@@ -104,6 +106,7 @@ section {
   height: 100%;
   background-color: #eee;
   padding-bottom: 60px;
+  overflow: hidden;
 }
 
 section p {
@@ -112,11 +115,14 @@ section p {
 }
 
 section .profile {
-  width: 1200px;
+  width: 1100px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 20px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -159,6 +165,7 @@ footer {
   margin: 0 auto;
   background-color: black;
   padding-top: 60px;
+  overflow: hidden;
 }
 
 footer .footer_jenny a {

@@ -6,17 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- AOS\\ -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="style.css">
+    
 
 </head>
 
 <body>
 
-    <nav>
+    <nav data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
         <div class="logo">
             <a href="">Jenny</a>
         </div>
@@ -40,9 +43,9 @@
     </div>
 
     <!-- 關於我 -->
-    <div class="aboutme">
-        <p class="p_title">關於我</p>
-        <h1>Jenny</h1>
+    <div class="aboutme" >
+        <p class="p_title" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">關於我</p>
+        <h1 data-aos="fade-down" data-aos-duration="3000" data-aos-once="true" data-aos-anchor-placement="bottom-bottom">Jenny</h1>
         <p class="p_content">我是一位網頁設計師</p>
         <a href="">關於我</a>
     </div>
@@ -50,7 +53,7 @@
     <section>
         <p>作品集</p>
         <div class="profile">
-            <div class="profile_box">
+            <div class="profile_box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
                 <a href="">
                     <img src="img/profile1.jpg" alt="">
                     <div class="profile_text">
@@ -59,7 +62,7 @@
                     </div>
                 </a>
             </div>
-            <div class="profile_box">
+            <div class="profile_box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800">
                 <a href="">
                     <img src="img/profile2.jpg" alt="">
                     <div class="profile_text">
@@ -68,7 +71,7 @@
                     </div>
                 </a>
             </div>
-            <div class="profile_box">
+            <div class="profile_box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1100">
                 <a href="">
                     <img src="img/profile3.jpg" alt="">
                     <div class="profile_text">
@@ -77,7 +80,7 @@
                     </div>
                 </a>
             </div>
-            <div class="profile_box">
+            <div class="profile_box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1400">
                 <a href="">
                     <img src="img/profile1.jpg" alt="">
                     <div class="profile_text">
@@ -86,7 +89,7 @@
                     </div>
                 </a>
             </div>
-            <div class="profile_box">
+            <div class="profile_box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1700">
                 <a href="">
                     <img src="img/profile1.jpg" alt="">
                     <div class="profile_text">
@@ -95,7 +98,7 @@
                     </div>
                 </a>
             </div>
-            <div class="profile_box">
+            <div class="profile_box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="2000">
                 <a href="">
                     <img src="img/profile1.jpg" alt="">
                     <div class="profile_text">
@@ -123,10 +126,13 @@
 
     </footer>
 
-
+<!-- AOS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<!-- 輪播 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
+        AOS.init();
         $('.slick').slick();
     </script>
 
