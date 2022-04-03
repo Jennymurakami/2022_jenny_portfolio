@@ -4,8 +4,17 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 0 7px 7px #ccc ;
+    box-shadow: 0 7px 7px #ccc;
     overflow: hidden;
+
+    @media screen and (max-width: 414px) {
+        justify-content:space-between;
+        padding:0 15px;
+        position:fixed;
+        top:0;
+        background-color: white;
+        z-index: 10;
+    }
 
     .logo {
         a {
@@ -14,22 +23,79 @@ nav {
             font-family: $main_font;
             color: black;
             transition: 0.5s;
-                    &:hover {filter: invert(67%) sepia(98%) saturate(164%) hue-rotate(98deg) brightness(90%) contrast(85%);}
+            &:hover {
+                filter: invert(67%) sepia(98%) saturate(164%) hue-rotate(98deg) brightness(90%) contrast(85%);
+            }
         }
     }
     .nav_title {
-        font-size: 24px;}
+        font-size: 24px;
+        @media screen and (max-width: 414px) {
+            display: none;
+        }
+    }
 
-        .about_icom {
-            a {
-                img{
-                    width: 30px;
-                    height: 30px;
-                    transition: 0.5s;
-                    &:hover {filter: invert(67%) sepia(98%) saturate(164%) hue-rotate(98deg) brightness(90%) contrast(85%);}
-                    
+    .about_icom {
+        @media screen and (max-width: 414px) {
+            display: none;
+        }
+
+        a {
+            img {
+                width: 30px;
+                height: 30px;
+                transition: 0.5s;
+                &:hover {
+                    filter: invert(67%) sepia(98%) saturate(164%) hue-rotate(98deg) brightness(90%) contrast(85%);
                 }
             }
         }
-    
+    }
+    .menu {
+        display: none;
+        width: 35px;
+        height: 35px;
+        @media screen and (max-width: 414px) {
+            display: block;
+        }
+    }
+}
+
+.mb_menu{
+    display: none;
+    @media screen and (max-width:414px) {
+        display: block; 
+        position:fixed;
+        top:6%;
+        width: 100%;
+        z-index:10;
+        background-color: white;
+
+        .menu_title{
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+.menu_main{
+width: 150px;
+margin:0 auto;
+    .menu_list{
+        a{
+            display: flex;
+           text-decoration: none;
+           align-items: center;
+           color:black;
+           gap:10px;
+            img{
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+    }
+
+}
+
+
+    }
 }

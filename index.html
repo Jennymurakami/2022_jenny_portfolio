@@ -19,6 +19,34 @@
 
 <body>
 
+    <!-- 選單 -->
+    <div class="mb_menu">
+        <p class="menu_title">作品集</p>
+        <div class="menu_main">
+            <div class="menu_list">
+                <a href="">
+                    <img src="img/github_logo_icon.png" alt="">
+                    <p>Github_jenny</p>
+                </a>
+            </div>
+            <div class="menu_list">
+                <a href="">
+                    <img src="img/facebook_social_icon.png" alt="">
+                    <p>facebook_jenny</p>
+                </a>
+            </div>
+            <div class="menu_list">
+                <a href="">
+                    <img src="img/line_fill_icon.png" alt="">
+                    <p>line_jenny</p>
+                </a>
+            </div>
+
+        </div>
+
+
+    </div>
+    <!-- 標題列 -->
     <nav data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
         <div class="logo">
             <a href="">Jenny</a>
@@ -29,6 +57,8 @@
             <a href=""><img src="img/facebook_social_icon.png" alt=""></a>
             <a href=""><img src="img/line_fill_icon.png" alt=""></a>
         </div>
+
+        <img id="menu" class="menu" src="img/menu.png" alt="">
     </nav>
     <div class="slick">
         <div class="slick_box">
@@ -135,6 +165,15 @@
     <script>
         AOS.init();
         $('.slick').slick();
+
+        $('.mb_menu').slideUp();
+// 選單
+$('#menu').click(function(){
+
+    $('.mb_menu').slideToggle();
+
+})
+
     </script>
 
 

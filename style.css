@@ -16,6 +16,19 @@ nav {
   overflow: hidden;
 }
 
+@media screen and (max-width: 414px) {
+  nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 15px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 10;
+  }
+}
+
 nav .logo a {
   text-decoration: none;
   font-size: 30px;
@@ -34,6 +47,18 @@ nav .nav_title {
   font-size: 24px;
 }
 
+@media screen and (max-width: 414px) {
+  nav .nav_title {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  nav .about_icom {
+    display: none;
+  }
+}
+
 nav .about_icom a img {
   width: 30px;
   height: 30px;
@@ -44,6 +69,57 @@ nav .about_icom a img {
 nav .about_icom a img:hover {
   -webkit-filter: invert(67%) sepia(98%) saturate(164%) hue-rotate(98deg) brightness(90%) contrast(85%);
           filter: invert(67%) sepia(98%) saturate(164%) hue-rotate(98deg) brightness(90%) contrast(85%);
+}
+
+nav .menu {
+  display: none;
+  width: 35px;
+  height: 35px;
+}
+
+@media screen and (max-width: 414px) {
+  nav .menu {
+    display: block;
+  }
+}
+
+.mb_menu {
+  display: none;
+}
+
+@media screen and (max-width: 414px) {
+  .mb_menu {
+    display: block;
+    position: fixed;
+    top: 6%;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
+  }
+  .mb_menu .menu_title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .mb_menu .menu_main {
+    width: 150px;
+    margin: 0 auto;
+  }
+  .mb_menu .menu_main .menu_list a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-decoration: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: black;
+    gap: 10px;
+  }
+  .mb_menu .menu_main .menu_list a img {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .slick {
