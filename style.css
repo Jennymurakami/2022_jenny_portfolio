@@ -52,9 +52,21 @@ nav .about_icom a img:hover {
   overflow: hidden;
 }
 
+@media screen and (max-width: 414px) {
+  .slick {
+    height: 100%;
+  }
+}
+
 .slick .slick_box {
   width: 100%;
   height: 100vh;
+}
+
+@media screen and (max-width: 414px) {
+  .slick .slick_box {
+    height: 100%;
+  }
 }
 
 .slick .slick_box img {
@@ -71,6 +83,12 @@ nav .about_icom a img:hover {
   overflow: hidden;
 }
 
+@media screen and (max-width: 414px) {
+  .aboutme {
+    height: 40vh;
+  }
+}
+
 .aboutme .p_title {
   font-size: 36px;
   margin-top: 20px;
@@ -80,6 +98,12 @@ nav .about_icom a img:hover {
   font-size: 180px;
   font-family: "Sedgwick Ave", cursive;
   font-weight: bold;
+}
+
+@media screen and (max-width: 414px) {
+  .aboutme h1 {
+    font-size: 70px;
+  }
 }
 
 .aboutme .p_content {
@@ -106,7 +130,6 @@ section {
   height: 100%;
   background-color: #eee;
   padding-bottom: 60px;
-  overflow: hidden;
 }
 
 section p {
@@ -128,9 +151,34 @@ section .profile {
       flex-wrap: wrap;
 }
 
+@media screen and (max-width: 768px) {
+  section .profile {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  section .profile {
+    display: block;
+    padding: 0 10px;
+  }
+}
+
 section .profile .profile_box {
   width: 30%;
   margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  section .profile .profile_box {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  section .profile .profile_box {
+    width: 100%;
+  }
 }
 
 section .profile .profile_box a {
